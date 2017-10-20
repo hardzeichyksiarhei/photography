@@ -1309,17 +1309,8 @@ body, html {
     padding: 20px 50px; }
     .top-line.active .logo {
       align-items: center; }
-      .top-line.active .logo .camera-icon {
-        width: 25px;
-        height: 25px; }
       .top-line.active .logo__text {
         font-size: 16px; }
-    .top-line.active .top-nav__link {
-      padding: 0 5px 3px; }
-      .top-line.active .top-nav__link.active:before, .top-line.active .top-nav__link:hover:before {
-        width: 100%; }
-      .top-line.active .top-nav__link.active:after, .top-line.active .top-nav__link:hover:after {
-        opacity: 0; }
 
 .logo {
   display: flex;
@@ -1370,6 +1361,7 @@ body, html {
       background-color: #fff; }
 
 .home-preview {
+  width: 60%;
   position: relative;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #F2C200;
@@ -1479,8 +1471,10 @@ body, html {
     .top-line.active {
       background-color: #2B2D5C;
       padding: 15px 30px; }
-  .home-preview:before {
-    display: none; } }
+  .home-preview {
+    width: 100%; }
+    .home-preview:before {
+      display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
