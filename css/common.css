@@ -1280,7 +1280,8 @@ body, html {
 
 .section {
   position: relative;
-  margin: 100px 0; }
+  margin: 100px 0;
+  background-color: #f7f7fc; }
 
 .s-home {
   display: flex;
@@ -1289,7 +1290,7 @@ body, html {
   background: #2B2D5C url(../images/bgImage.jpg) right bottom/cover no-repeat;
   color: #fff;
   margin: 0;
-  padding: 0 140px; }
+  padding: 0 150px; }
 
 .top-line {
   position: fixed;
@@ -1297,12 +1298,15 @@ body, html {
   left: 0;
   width: 100%;
   z-index: 9999;
-  padding: 30px 140px;
+  padding: 30px 50px;
   background-color: transparent;
-  transition: .25s all ease; }
+  transition: .25s all ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .top-line.active {
     background-color: #2B2D5C;
-    padding: 20px 140px; }
+    padding: 20px 50px; }
     .top-line.active .logo {
       align-items: center; }
       .top-line.active .logo .camera-icon {
@@ -1316,10 +1320,6 @@ body, html {
         width: 100%; }
       .top-line.active .top-nav__link.active:after, .top-line.active .top-nav__link:hover:after {
         opacity: 0; }
-  .top-line .col-md-12 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
 
 .logo {
   display: flex;
@@ -1351,7 +1351,7 @@ body, html {
     position: relative;
     display: inline-block;
     color: #fff;
-    padding: 0 10px 5px; }
+    padding: 0 10px 6px; }
     .top-nav__link.active:before, .top-nav__link:hover:before {
       content: '';
       position: absolute;
@@ -1370,22 +1370,24 @@ body, html {
       background-color: #fff; }
 
 .home-preview {
+  position: relative;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #F2C200;
-  padding: 0 20px; }
+  padding: 0 20px;
+  z-index: 2; }
   .home-preview:after, .home-preview:before {
     content: '';
     position: absolute;
     z-index: 2; }
   .home-preview:after {
-    left: 15px;
+    left: -1px;
     bottom: -100px;
     height: 100px;
     width: 1px;
     background-color: #fff; }
   .home-preview:before {
-    bottom: 0;
-    left: -75px;
+    bottom: -1px;
+    left: -100px;
     width: 100px;
     height: 1px;
     background-color: #F2C200; }

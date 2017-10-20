@@ -17,23 +17,51 @@ body, html {
 .no-padding {
   padding: 0; }
 
-.s-about-me {
-  background-color: #F7F7FC; }
+.s-columns {
+  display: flex;
+  flex-flow: row wrap; }
+  .s-columns--reverse {
+    flex-direction: row-reverse; }
+  .s-columns__item--1 {
+    flex-basis: 400px;
+    flex-grow: 1; }
+  .s-columns__item--2 {
+    flex-basis: 650px;
+    flex-grow: 12; }
+  .s-columns__item--image {
+    flex-basis: 400px;
+    flex-grow: 6; }
+  .s-columns__item--accent-1 {
+    background-color: #2B2D5C; }
+  .s-columns__item--accent-2 {
+    background-color: #F2C200; }
 
-.s-about-me-content {
-  padding: 60px 140px; }
-  .s-about-me-content__title, .s-about-me-content__sub-title {
+.s-sidebar {
+  padding: 50px;
+  color: #fff; }
+  .s-sidebar__title {
     font-family: "Trirong", sans-serif;
     font-size: 46px;
     font-weight: 400;
-    color: #2B2D5C;
-    margin: 0; }
-  .s-about-me-content__sub-title {
-    font-size: 28px;
-    margin: 30px 0; }
+    color: #fff; }
+
+.s-content {
+  padding: 50px; }
+
+.s-about-me-content__title, .s-about-me-content__sub-title {
+  font-family: "Trirong", sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  color: #2B2D5C;
+  margin: 0; }
+
+.s-about-me-content__sub-title {
+  font-size: 28px;
+  margin: 30px 0; }
 
 .my-photo {
-  background: #2B2D5C url(../images/myPhoto.jpg) center center/cover no-repeat; }
+  background: #2B2D5C url(../images/myPhoto.jpg) center center/cover no-repeat;
+  min-height: 90vh; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1200px) {
