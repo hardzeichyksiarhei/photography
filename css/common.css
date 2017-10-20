@@ -1438,18 +1438,23 @@ body, html {
 .btn {
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 100px;
   text-transform: uppercase;
   line-height: 1;
   font-size: 12px;
   letter-spacing: 1px; }
   .btn--accent-1 {
+    border: 2px solid #2B2D5C;
     background-color: #2B2D5C;
     color: #fff; }
   .btn--accent-2 {
+    border: 2px solid #F2C200;
     background-color: #F2C200;
     color: #2B2D5C; }
+  .btn--white {
+    border: 2px solid #fff;
+    color: #fff; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1200px) {
