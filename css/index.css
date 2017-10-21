@@ -30,9 +30,12 @@ body, html {
   color: #2B2D5C;
   margin: 0; }
 
+.s-about-me-content__description {
+  margin-bottom: 40px; }
+
 .s-about-me-content__sub-title {
   font-size: 28px;
-  margin: 30px 0; }
+  margin: 70px 0 0; }
 
 .my-photo {
   background: #2B2D5C url(../images/myPhoto.jpg) center center/cover no-repeat;

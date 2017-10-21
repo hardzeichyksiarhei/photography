@@ -33,6 +33,34 @@
   font-style: normal;
   font-weight: 600;
   src: url(../fonts/Muli-Bold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Icomoon.eot?#iefix) format("embedded-opentype"), url(../fonts/Icomoon.woff) format("woff"), url(../fonts/Icomoon.ttf) format("truetype"); }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icomoon', sans-serif !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-google:before {
+  content: "\E901"; }
+
+.icon-pinterest:before {
+  content: "\E903"; }
+
+.icon-behance:before {
+  content: "\E900"; }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2017 Twitter, Inc.
@@ -1362,38 +1390,39 @@ body, html {
 
 .top-line {
   position: fixed;
-  top: 0;
+  top: 15px;
   left: 0;
   width: 100%;
   z-index: 9999;
-  padding: 30px 50px;
+  padding: 20px 50px;
   background-color: transparent;
-  transition: .25s all ease;
+  transition: .25s top linear, .25s background-color linear;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .top-line.active {
     background-color: #23254b;
-    padding: 20px 50px; }
-    .top-line.active .logo {
-      align-items: center; }
-      .top-line.active .logo__text {
-        font-size: 16px; }
+    top: 0; }
+    .top-line.active .logo__text {
+      font-size: 16px;
+      bottom: 10.5px; }
 
 .logo {
-  display: flex;
-  align-items: flex-end; }
+  position: relative; }
   .logo .camera-icon {
     width: 35px;
-    height: 35px;
-    margin-right: 10px; }
+    height: 35px; }
   .logo__text {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
     text-transform: uppercase;
     font-weight: 300;
     color: #fff;
     font-size: 20px;
     line-height: 1;
-    margin: 0 0 -1px; }
+    margin: 0 0 -1px;
+    transition: .25s bottom linear, .25s font-size linear; }
     .logo__text span {
       font-weight: 600; }
 
@@ -1493,7 +1522,43 @@ body, html {
   height: 30px;
   bottom: 15px;
   left: calc(50% - 15px);
-  transition: .25s all ease; }
+  transition: .25s all linear; }
+
+.s-home-social-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 30px 10px;
+  margin: 0;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff; }
+  .s-home-social-list:before, .s-home-social-list:after {
+    content: '';
+    position: absolute;
+    background-color: #fff; }
+  .s-home-social-list:before {
+    top: -40px;
+    left: -1px;
+    width: 1px;
+    height: 40px; }
+  .s-home-social-list:after {
+    top: -1px;
+    left: -40px;
+    height: 1px;
+    width: 40px; }
+  .s-home-social-list__item {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px; }
+    .s-home-social-list__item:last-of-type {
+      margin-right: 0; }
+  .s-home-social-list__link {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    transition: .25s color linear; }
+    .s-home-social-list__link:hover {
+      color: #F2C200; }
 
 .btn {
   position: relative;
@@ -1506,12 +1571,10 @@ body, html {
   letter-spacing: 1px; }
   .btn--accent-1 {
     border: 2px solid #2B2D5C;
-    background-color: #2B2D5C;
-    color: #fff; }
+    color: #2B2D5C; }
   .btn--accent-2 {
     border: 2px solid #F2C200;
-    background-color: #F2C200;
-    color: #2B2D5C; }
+    color: #F2C200; }
   .btn--white {
     border: 2px solid #fff;
     color: #fff; }

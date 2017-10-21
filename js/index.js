@@ -1,1 +1,1 @@
-webpackJsonp([1],{7:function(i,n,o){"use strict";(function(i){o(1),o(8),o(2),i(function(){i("#portfolio-grid").justifiedGallery({rowHeight:320,margins:20,lastRow:"hide"})})}).call(n,o(0))},8:function(i,n){}},[7]);
+webpackJsonp([1],{7:function(i,n,o){"use strict";(function(i){o(1),o(8),o(2),i(function(){i("#portfolio-grid").justifiedGallery({rowHeight:320,margins:20})})}).call(n,o(0))},8:function(i,n){}},[7]);
