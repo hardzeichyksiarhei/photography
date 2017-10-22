@@ -687,6 +687,9 @@ body, html {
 .center {
   text-align: center; }
 
+.s-home {
+  background: #2B2D5C url(../images/aboutMeBG.jpg) right bottom/cover no-repeat; }
+
 .s-divider {
   padding-bottom: 30px; }
 
