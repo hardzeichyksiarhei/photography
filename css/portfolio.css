@@ -3,7 +3,7 @@ body, html {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "Muli";
+  font-family: "Muli", sans-serif;
   font-weight: normal;
   overflow-x: hidden;
   background-color: #fff;
@@ -22,6 +22,9 @@ body, html {
 
 .no-padding {
   padding: 0; }
+
+.center {
+  text-align: center; }
 
 .s-home {
   background: #2B2D5C url(../images/partfolioBG.jpg) right bottom/cover no-repeat; }
@@ -61,3 +64,32 @@ body, html {
 .justified-gallery > .entry-visible > img,
 .justified-gallery > .entry-visible > a > img {
   transition: .4s filter ease, .4s transform ease, opacity 500ms ease-in; }
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .s-about-me-content {
+    padding: 80px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .s-about-me-content {
+    padding: 30px; }
+  .s-sidebar {
+    padding: 30px; }
+  .s-content {
+    padding: 30px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .s-home {
+    padding: 0 20px; }
+  .top-line {
+    padding: 15px 20px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }

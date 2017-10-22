@@ -3,7 +3,7 @@ body, html {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "Muli";
+  font-family: "Muli", sans-serif;
   font-weight: normal;
   overflow-x: hidden;
   background-color: #fff;
@@ -23,19 +23,38 @@ body, html {
 .no-padding {
   padding: 0; }
 
-.s-about-me-content__title, .s-about-me-content__sub-title {
-  font-family: "Trirong", sans-serif;
-  font-size: 46px;
-  font-weight: 400;
-  color: #2B2D5C;
-  margin: 0; }
+.center {
+  text-align: center; }
 
-.s-about-me-content__description {
-  margin-bottom: 40px; }
+.s-about-me-content {
+  padding: 60px 50px; }
+  .s-about-me-content__title, .s-about-me-content__sub-title {
+    font-family: "Trirong", sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    color: #2B2D5C;
+    text-align: center;
+    margin: 0 0 50px; }
+  .s-about-me-content__sub-title {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 30px; }
+  .s-about-me-content .btn {
+    margin-top: 50px; }
 
-.s-about-me-content__sub-title {
-  font-size: 28px;
-  margin: 70px 0 0; }
+.what-do-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 0 -25px 15px -25px; }
+  .what-do-grid__item {
+    width: calc(100% / 4);
+    margin-top: 20px;
+    padding: 0 25px; }
+  .what-do-grid__title {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px; }
 
 .my-photo {
   background: #2B2D5C url(../images/myPhoto.jpg) center center/cover no-repeat;
@@ -177,7 +196,9 @@ body, html {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .s-about-me-content {
-    padding: 80px; } }
+    padding: 80px; }
+  .what-do-grid__item {
+    width: calc(100% / 4); } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -197,7 +218,9 @@ body, html {
     .form__btn--accent-2 {
       float: none;
       width: 100%;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .what-do-grid__item {
+    width: calc(100% / 2); } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
