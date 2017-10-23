@@ -1,38 +1,14 @@
 @font-face {
-  font-family: "Trirong";
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/Trirong-Light.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Trirong";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/Trirong-Regular.ttf) format("truetype"); }
+  src: url(../fonts/roboto.woff2) format("woff2"), url(../fonts/roboto.woff) format("woff"), url(../fonts/roboto.ttf) format("truetype"); }
 
 @font-face {
-  font-family: "Trirong";
-  font-style: normal;
-  font-weight: 600;
-  src: url(../fonts/Trirong-Bold.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/Muli-Light.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Muli";
+  font-family: "PlayfairDisplay";
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/Muli-Regular.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 600;
-  src: url(../fonts/Muli-Bold.ttf) format("truetype"); }
+  src: url(../fonts/PlayfairDisplay-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/PlayfairDisplay-Regular.woff) format("woff"), url(../fonts/PlayfairDisplay-Regular.ttf) format("truetype"); }
 
 @font-face {
   font-family: "Icomoon";
@@ -1292,7 +1268,7 @@ body, html {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "Muli", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   overflow-x: hidden;
   background-color: #fff;
@@ -1324,7 +1300,7 @@ body, html {
   padding: 80px;
   background-color: #f7f7fc; }
   .s-divider__text {
-    font-family: "Trirong", sans-serif;
+    font-family: "PlayfairDisplay", sans-serif;
     position: relative;
     font-size: 42px;
     line-height: 1;
@@ -1366,7 +1342,7 @@ body, html {
   .s-sidebar__content {
     flex-grow: 1; }
   .s-sidebar__title {
-    font-family: "Trirong", sans-serif;
+    font-family: "PlayfairDisplay", sans-serif;
     font-size: 46px;
     font-weight: 400;
     color: #fff;
@@ -1523,7 +1499,7 @@ body, html {
     position: relative;
     display: inline-block;
     color: #fff;
-    padding: 0 10px 6px; }
+    padding: 0 8px 5px; }
     .top-nav__link.active:before, .top-nav__link:hover:before {
       content: '';
       position: absolute;
@@ -1580,7 +1556,7 @@ body, html {
     height: 1px;
     background-color: #F2C200; }
   .home-preview__title {
-    font-family: "Trirong", sans-serif;
+    font-family: "PlayfairDisplay", sans-serif;
     font-weight: 300;
     font-size: 4.571em;
     line-height: 1.2;
@@ -1662,7 +1638,7 @@ body, html {
 .btn {
   position: relative;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 15px 30px 13px;
   border-radius: 100px;
   text-transform: uppercase;
   line-height: 1;
@@ -1718,6 +1694,12 @@ body, html {
       width: 50px;
       height: 1px;
       background-color: #fff; }
+
+.info-table span {
+  display: inline-block;
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 10px; }
 
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1200px) {

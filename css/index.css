@@ -3,7 +3,7 @@ body, html {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "Muli", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   overflow-x: hidden;
   background-color: #fff;
@@ -29,7 +29,7 @@ body, html {
 .s-about-me-content {
   padding: 60px 50px; }
   .s-about-me-content__title, .s-about-me-content__sub-title {
-    font-family: "Trirong", sans-serif;
+    font-family: "PlayfairDisplay", sans-serif;
     font-size: 46px;
     font-weight: 400;
     color: #2B2D5C;
