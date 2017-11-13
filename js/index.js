@@ -1,1 +1,39 @@
-webpackJsonp([2],{10:function(i,n){},9:function(i,n,o){"use strict";(function(i){o(1),o(10),o(2),i(function(){i("#portfolio-grid").justifiedGallery({rowHeight:320,margins:20})})}).call(n,o(0))}},[9]);
+webpackJsonp([2],{
+
+/***/ 10:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+__webpack_require__(1);
+
+__webpack_require__(10);
+
+__webpack_require__(2);
+
+$(function () {
+
+    //---------------- Plugins -----------------
+    //------------------------------------------
+
+    $('#portfolio-grid').justifiedGallery({
+        rowHeight: 320,
+        margins: 20
+    });
+
+    //------------------------------------------
+    //------------------------------------------
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ })
+
+},[9]);
